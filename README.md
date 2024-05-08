@@ -42,14 +42,18 @@ Sobre el archivo "atmega328p.json", es un archivo json que incluye información 
 
 
 Los registros son los siguientes:
-![imagenes_de_registros](images/Pasted image 20240124182626.png)
+
+![[imagenes_de_registros](images/Pasted image 20240124182626.png)](https://github.com/FabLab-Merida/Rust-en-Arduino/blob/main/images/Pasted%20image%2020240124182626.png?raw=true)
 
 y se utilizan de la siguiente manera:
-![[images/Pasted image 20240124182706.png]]
+
+![[[images/Pasted image 20240124182706.png]]](https://github.com/FabLab-Merida/Rust-en-Arduino/blob/main/images/Pasted%20image%2020240124182706.png)
 
 Se puede elegir toda una sección de registros si no se pone el número a la hora de determinarlo.
 Se puede conocer que pines son que registro de la siguiente manera:
-![[images/Pasted image 20240124183134.png]]
+
+![[[images/Pasted image 20240124183134.png]]](https://github.com/FabLab-Merida/Rust-en-Arduino/blob/main/images/Pasted%20image%2020240124183134.png)
+
 Nos iríamos a al hoja de especificación del microcontrolador(atmega).
 
 
@@ -66,11 +70,12 @@ pub extern "C" fn main(){
 }
 ```
 Esto hace que todos los pines estén marcados como salida, y que estamos escribiendo en un solo pin.
-![[images/Pasted image 20240124184221.png]]
 
+![[[images/Pasted image 20240124184221.png]]](https://github.com/FabLab-Merida/Rust-en-Arduino/blob/main/images/Pasted%20image%2020240124184221.png)
 
 Una vez compilado sera necesario exportarlo al arduino, esto se puede hacer mirando en el arduino IDE(como administrador) para mirar que puerto nos ha asignado el sistema operativo para el arduino que este conectado.
-![[images/Pasted image 20240124185329.png]]
+
+![[[images/Pasted image 20240124185329.png]]](https://github.com/FabLab-Merida/Rust-en-Arduino/blob/main/images/Pasted%20image%2020240124185329.png)
 
 y convertir el .elf(resultado de compilación) a un .hex, esto se hace de la siguiente manera:
 ```bash
@@ -282,7 +287,7 @@ Ya existen diferentes implementaciones creadas por la comunidad para "panic" y, 
 Gracias a esto tampoco es específicamente necesario lidiar con bootloaders una vez que ya tienes el HAL de cada placa
 
 En el .toml habría que incluir la librería arduino-hal(si es que la queremos utilizar, sirve tanto implementada como descargada anteriormente) y la librería panic-halt.
-![[Pasted image 20240128003856.png]]
+![[[Pasted image 20240128003856.png]]](https://github.com/FabLab-Merida/Rust-en-Arduino/blob/main/images/Pasted%20image%2020240128003856.png)
 
 Se pueden utilizar tanto la versión por control de bajo nivel(con registros manuales) o la versión de alto nivel(con el HAL).
 
@@ -330,15 +335,12 @@ Sobre el montaje e instalación informaré próximamente
 
 Documentación en:
 
-https://sg.com.mx/buzz/ponencias/rust-mx/rust-y-arduino (el tio explica bien que es necesario para programar esta cosa en rust)
-
-![[RustMX 12.22 ｜ Rust y Arduino [pOM6mQnB2xs].mkv]]
-
+[https://sg.com.mx/buzz/ponencias/rust-mx/rust-y-arduino](https://sg.com.mx/buzz/ponencias/rust-mx/rust-y-arduino) (Explica bien que es necesario para programar esta cosa en rust)
 
 buscar información de donde sacar las arquitecturas de arduino para rust y conseguir el json para el compilador, resulta que lo tiene el tio al final del vídeo.
 
 Buscar tablas de especificaciones de cada microcontrolador arduino.
 
-https://docs.rust-embedded.org/book/start/registers.html?highlight=pwm#using-a-peripheral-access-crate-pac
+[https://docs.rust-embedded.org/book/start/registers.html?highlight=pwm#using-a-peripheral-access-crate-pac](https://docs.rust-embedded.org/book/start/registers.html?highlight=pwm#using-a-peripheral-access-crate-pac)
 
-https://rahix.github.io/avr-hal/arduino_hal/index.html
+[https://rahix.github.io/avr-hal/arduino_hal/index.html](https://rahix.github.io/avr-hal/arduino_hal/index.html)
