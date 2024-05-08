@@ -42,7 +42,7 @@ Sobre el archivo "atmega328p.json", es un archivo json que incluye información 
 
 
 Los registros son los siguientes:
-![[images/Pasted image 20240124182626.png]]
+![imagenes_de_registros](images/Pasted image 20240124182626.png)
 
 y se utilizan de la siguiente manera:
 ![[images/Pasted image 20240124182706.png]]
