@@ -1,10 +1,9 @@
 # Rust-en-Arduino
 ## Investigación sobre como programar dispositivos raw metal utilizando el lenguaje de programación rust, tanto sin capa de abstracción, como con ella.
 
+### **Este documento recoge información de como programar un dispositivo arduino con Rust, no es una guía paso a paso de como hacerlo, así que hay inconsistencia semántica, ya que son apuntes sobre el tema** 
 
-probar a programar la parte de software con rust y exportarlo a un arduino por experimentar y ver que tal se manejaría
-
-En cuanto a como se programaria en rust se tendria que determinar que no se use la libreria estandar(ya que no tiene sistema operativo) y que tampoco determine un punto de entrada, esto se haria de la siguiente manera:
+Como se programaria en rust se tendria que determinar que no se use la libreria estandar(ya que no tiene sistema operativo) y que tampoco determine un punto de entrada, esto se haria de la siguiente manera:
 ```rust
 #![no_main]
 #![no_std]
