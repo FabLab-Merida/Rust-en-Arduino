@@ -42,14 +42,14 @@ Sobre el archivo "atmega328p.json", es un archivo json que incluye información 
 
 
 Los registros son los siguientes:
-![[Pasted image 20240124182626.png]]
+![[images/Pasted image 20240124182626.png]]
 
 y se utilizan de la siguiente manera:
-![[Pasted image 20240124182706.png]]
+![[images/Pasted image 20240124182706.png]]
 
 Se puede elegir toda una sección de registros si no se pone el número a la hora de determinarlo.
 Se puede conocer que pines son que registro de la siguiente manera:
-![[Pasted image 20240124183134.png]]
+![[images/Pasted image 20240124183134.png]]
 Nos iríamos a al hoja de especificación del microcontrolador(atmega).
 
 
@@ -66,11 +66,11 @@ pub extern "C" fn main(){
 }
 ```
 Esto hace que todos los pines estén marcados como salida, y que estamos escribiendo en un solo pin.
-![[Pasted image 20240124184221.png]]
+![[images/Pasted image 20240124184221.png]]
 
 
 Una vez compilado sera necesario exportarlo al arduino, esto se puede hacer mirando en el arduino IDE(como administrador) para mirar que puerto nos ha asignado el sistema operativo para el arduino que este conectado.
-![[Pasted image 20240124185329.png]]
+![[images/Pasted image 20240124185329.png]]
 
 y convertir el .elf(resultado de compilación) a un .hex, esto se hace de la siguiente manera:
 ```bash
