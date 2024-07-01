@@ -1,5 +1,5 @@
 # Rust-en-Arduino
-## Investigación sobre como programar dispositivos raw metal utilizando el lenguaje de programación rust, tanto sin capa de abstracción, como con ella.
+## Investigación sobre como programar dispositivos bare metal utilizando el lenguaje de programación rust, tanto sin capa de abstracción, como con ella.
 
 ### **Este documento recoge información de como programar un dispositivo arduino con Rust, no es una guía paso a paso de como hacerlo, así que hay inconsistencia semántica, ya que son apuntes sobre el tema.** 
 
